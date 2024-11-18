@@ -1,40 +1,39 @@
-// import { useState } from 'react'
-import Profile from './components/Profile/Profile'
-import FriendList from './components/FriendList/FriendList'
-import './App.css'
-import userData from "../userData.json";
+import Profile from './components/Profile/Profile';
+import FriendList from './components/Friends/FriendList';
+import './App.css';
+import userData from '../userData.json';
 
 const friends = [
   {
-    avatar: "https://cdn-icons-png.flaticon.com/512/1998/1998592.png",
-    name: "Mango",
+    avatar: 'https://cdn-icons-png.flaticon.com/512/1998/1998592.png',
+    name: 'Mango',
     isOnline: true,
-    id: 1812
+    id: 1812,
   },
   {
-    avatar: "https://cdn-icons-png.flaticon.com/512/616/616438.png",
-    name: "Kiwi",
+    avatar: 'https://cdn-icons-png.flaticon.com/512/616/616438.png',
+    name: 'Kiwi',
     isOnline: false,
-    id: 1137
+    id: 1137,
   },
   {
-    avatar: "https://cdn-icons-png.flaticon.com/512/1623/1623681.png",
-    name: "Ajax",
+    avatar: 'https://cdn-icons-png.flaticon.com/512/1623/1623681.png',
+    name: 'Ajax',
     isOnline: true,
-    id: 1213
+    id: 1213,
   },
   {
-    avatar: "https://cdn-icons-png.flaticon.com/512/2977/2977285.png",
-    name: "Jay",
+    avatar: 'https://cdn-icons-png.flaticon.com/512/2977/2977285.png',
+    name: 'Jay',
     isOnline: true,
-    id: 1714
+    id: 1714,
   },
   {
-    avatar: "https://cdn-icons-png.flaticon.com/512/1998/1998749.png",
-    name: "Poly",
+    avatar: 'https://cdn-icons-png.flaticon.com/512/1998/1998749.png',
+    name: 'Poly',
     isOnline: false,
-    id: 1284
-  }
+    id: 1284,
+  },
 ];
 
 const App = () => {
@@ -47,9 +46,9 @@ const App = () => {
         image={userData.avatar}
         stats={userData.stats}
       />
-        <FriendList friends={friends} />
+      <FriendList friends={friends} />
     </>
   );
 };
 
-export default App
+export default App;
