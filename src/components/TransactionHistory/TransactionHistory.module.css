@@ -1,4 +1,4 @@
-table {
+.transactionTable {
   width: 80%;
   border-collapse: collapse;
   margin: 0 auto;
@@ -7,31 +7,29 @@ table {
   text-align: center;
 }
 
-thead {
-  background-color: rgba(28, 28, 28, 0.9);
-  color: white;
+.tableHead {
+  background-color: #333;
+  color: #fff;
 }
 
-th,
-td {
+.tableHeader {
   padding: 10px;
+  text-transform: uppercase;
+  font-weight: bold;
   border: 1px solid black;
-  text-transform: capitalize;
 }
 
-tbody tr:nth-child(odd) {
+.tableRow:nth-child(odd) {
   background-color: #f2f2f2;
 }
 
-tbody tr:nth-child(even) {
+.tableRow:nth-child(even) {
   background-color: #eaeaea;
 }
 
-/* tbody tr:hover {
-  background-color: #d1e7ff;
-} */
-
-/* th {
-  font-weight: bold;
-  text-transform: uppercase;
-} */
+.tableCell {
+  padding: 10px;
+  border: 1px solid #ddd;
+  text-transform: capitalize;
+  border: 1px solid black;
+}
